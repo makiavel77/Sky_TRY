@@ -1,7 +1,7 @@
 --- #stop service light environment
 - hosts: all
   #connection: local
-  #sudo: true
+  sudo: true
   tasks:
   - name:  SPLUNK STOP
     service: name=splunk state=stopped
