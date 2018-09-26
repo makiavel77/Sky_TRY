@@ -7,7 +7,6 @@
     command: whoami
     register: whoami_output
   - debug: var=whoami_output.stdout
-  tasks:
   - name:  SPLUNK STOP
     service: name=splunk state=stopped
     #become: true
