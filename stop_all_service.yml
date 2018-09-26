@@ -1,0 +1,14 @@
+--- #stop service light environment
+- hosts: local
+  connection: local
+  sudo: true
+  tasks:
+  - name:  SPLUNK STOP
+    service: name=splunk state=stopped
+    #notify:
+    #- stop splunk
+  #handlers:
+  #- name: stop splunk
+    #service: name=splunk state=stopped
+  - name: JENKINS STOP
+    service: name=jenkins state=stopped
