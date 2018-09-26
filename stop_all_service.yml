@@ -1,6 +1,6 @@
 --- #stop service light environment
 - hosts: all
-  #connection: local
+  connection: local
   #sudo: true
   tasks:
   - name: echo test
