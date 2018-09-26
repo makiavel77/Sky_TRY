@@ -1,7 +1,7 @@
 --- #stop service light environment
 - hosts: all
-  connection: local
-  remote_user: jboss
+  #connection: local
+  sudo: true
   tasks:
   - name: echo test
     remote_user: jboss
