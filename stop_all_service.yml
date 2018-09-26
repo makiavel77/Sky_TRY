@@ -3,10 +3,6 @@
   #connection: local
   #sudo: true
   tasks:
-  - name ECHO USER
-    shell: echo '$USER'
-    register: myecho
-    debug: msg="{{myecho.stdout}}"
   - name:  SPLUNK STOP
     service: name=splunk state=stopped
     #become: true
