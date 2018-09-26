@@ -1,5 +1,5 @@
 --- #stop service light environment
-- hosts: local
+- hosts: all
   #connection: local
   sudo: true
   tasks:
