@@ -2,8 +2,10 @@
 - hosts: all
   connection: local
   #sudo: true
+  remote_user: jboss
   tasks:
   - name: echo test
+     remote
     command: whoami
     register: whoami_output
   - debug: var=whoami_output.stdout
