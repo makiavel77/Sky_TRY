@@ -10,8 +10,8 @@
   - debug: var=whoami_output.stdout
   - name:  SPLUNK STOP
     service: name=splunk state=stopped
-    become: true
-    become_user: jboss
+    become: yes
+    #become_user: jboss
     #notify:
     #- stop splunk
   #handlers:
@@ -19,5 +19,5 @@
     #service: name=splunk state=stopped
   - name: JENKINS STOP
     service: name=jenkins state=stopped
-    become: true
-    become_user: jboss
+    become: yes
+    #become_user: jboss
